@@ -1,0 +1,64 @@
+#######################################################
+#                                                     #
+#   Menu Tablet Fixer - Atom for Gantry               #
+#                                                     #
+#   Purpose: This project fixes the default menu      #
+#            behavior for large touch devices.        #
+#            The first tap on a menu with sub items   #
+#            expands the menu, while the second       #
+#            tap opens the deposited link.            #
+#                                                     #
+#   Author: Andreas Kar (thex) <andreas.kar@gmx.at>   #
+#                                                     #
+#######################################################
+
+name: Menu Tablet Fixer
+description: Configurazione Atomo Menu Tablet Fixer.
+type: atom
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Abilita globalmente le Atomo Menu Tablet Fixer.
+      default: true
+
+    set_js:
+      type: container.set
+      label: Javascript
+      fields:
+        js.placement:
+          type: select.select
+          label: Posizione JS
+          description: Posizionamento dello JS.
+          default: head
+          options:
+            head: Header
+            footer: Footer
+
+        js.priority:
+          type: input.text
+          label: Priorità JS
+          description: Priorità dello JS.
+          placeholder: -10 ... 10
+          default: 0
+
+        js.path:
+          type: input.text
+          label: Percorso JS
+          description: Percorso al file JS di Atomo o su questo server (relativo al template/custom) o su un server diverso (assoluto).
+          placeholder: percorso/al/JS
+          default: js/menu-tablet-fixer.js
+
+        js.execution:
+          type: select.select
+          label: Esecuzione JS
+          description: Il metodo di esecuzione usato per il JS caricato.
+          placeholder: 'Seleziona...'
+          default: none
+          options:
+              none: Nessuno
+              async: Asincrono
+              defer: Differita
+              both: Entrambe

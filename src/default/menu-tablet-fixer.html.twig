@@ -1,0 +1,44 @@
+{#######################################################}
+{#                                                     #}
+{#   Menu Tablet Fixer - Atom for Gantry               #}
+{#                                                     #}
+{#   Purpose: This project fixes the default menu      #}
+{#            behavior for large touch devices.        #}
+{#            The first tap on a menu with sub items   #}
+{#            expands the menu, while the second       #}
+{#            tap opens the deposited link.            #}
+{#                                                     #}
+{#   Author: Andreas Kar (thex) <andreas.kar@gmx.at>   #}
+{#                                                     #}
+{#######################################################}
+
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set scriptType = 'text/javascript' %}
+
+{% set jsPlace = particle.js.placement|default('head') %}
+{% set jsPath = 'gantry-theme://' ~ particle.js.path|default('js/menu-tablet-fixer.js') %}
+{% set jsPrior = particle.js.priority|default(0) %}
+{% set jsExec = '' %}
+
+{% if particle.js.execution == 'defer' or particle.js.execution == 'both' %}
+    {% set jsExec = 'defer="defer"' %}
+{% endif %}
+
+{% if particle.js.execution == 'both' %}
+    {% set jsExec = jsExec ~ ' ' %}
+{% endif %}
+
+{% if particle.js.execution == 'async' or particle.js.execution == 'both' %}
+    {% set jsExec = jsExec ~ 'async="async"' %}
+{% endif %}
+
+{% if jsExec is not empty %}
+    {% set jsExec = ' ' ~ jsExec %}
+{% endif %}
+
+{%- block particle -%}
+    {%- scripts in jsPlace with { priority: jsPrior } -%}
+        <script type="{{scriptType}}" src="{{url(jsPath)}}"{{jsExec}}></script>
+    {%- endscripts -%}
+{%- endblock -%}

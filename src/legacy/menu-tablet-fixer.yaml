@@ -1,0 +1,64 @@
+#######################################################
+#                                                     #
+#   Menu Tablet Fixer - Atom for Gantry               #
+#                                                     #
+#   Purpose: This project fixes the default menu      #
+#            behavior for large touch devices.        #
+#            The first tap on a menu with sub items   #
+#            expands the menu, while the second       #
+#            tap opens the deposited link.            #
+#                                                     #
+#   Author: Andreas Kar (thex) <andreas.kar@gmx.at>   #
+#                                                     #
+#######################################################
+
+name: Menu Tablet Fixer
+description: Configure Menu Tablet Fixer Atom.
+type: atom
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the Menu Tablet Fixer Atom.
+      default: true
+
+    set_js:
+      type: container.set
+      label: Javascript
+      fields:
+        js.placement:
+          type: select.select
+          label: JS Placement
+          description: Placement of the JS.
+          default: head
+          options:
+            head: Header
+            footer: Footer
+
+        js.priority:
+          type: input.text
+          label: JS Priority
+          description: The priority of the JS.
+          placeholder: -10 ... 10
+          default: 0
+
+        js.path:
+          type: input.text
+          label: JS Path
+          description: Path to the Atom JS file either on this server (relative from template/custom) or on a different server (absolute).
+          placeholder: path/to/JS
+          default: js/menu-tablet-fixer.js
+
+        js.execution:
+          type: select.select
+          label: JS Execution
+          description: The used execution method for the loaded JS.
+          placeholder: 'Select...'
+          default: none
+          options:
+              none: None
+              async: Asynchronous
+              defer: Deferred
+              both: Both

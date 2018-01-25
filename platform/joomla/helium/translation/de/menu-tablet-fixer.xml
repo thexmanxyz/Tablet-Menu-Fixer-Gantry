@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" method="upgrade" version="3.0">
+    <name>Menu Tablet Fixer - Gantry Atom (Helium)</name>
+    <creationDate>1.0.0</creationDate>
+    <creationDate>25.01.2018</creationDate>
+    <author>Andreas Kar</author>
+    <authorEmail>andreas.kar@gmx.at</authorEmail>
+    <authorUrl></authorUrl>
+    <copyright>© 2017 Andreas Kar</copyright>
+    <license>MIT - see LICENSE.pdf</license>
+    <description>
+        <![CDATA[<div class="alert alert-info" role="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		<h3>Menu Tablet Fixer - Atom for Gantry Framework</h3>
+		<span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
+		<p><b>INFO</b>:&nbsp;Dieses Atom wurde für Gantry Helium installiert.<br />Wenn Sie das Atom für ein anderes Gantry Template installieren möchten, so müssen Sie die zwei folgenden Dateien <code>menu-tablet-fixer.yaml</code> und <code>menu-tablet-fixer.html.twig</code> in den Ordner <code>/templates/[TEMPLATE]/custom/particles</code> kopieren.<br>Außerdem muss die Datei <code>menu-tablet-fixer.js</code> in den Ordner <code>/templates/[TEMPLATE]/custom/js</code> kopiert werden.</p></div>]]>
+    </description>
+    <fileset>
+        <files folder="particles" target="templates/g5_helium/custom/particles">
+			<filename>menu-tablet-fixer.html.twig</filename>
+			<filename>menu-tablet-fixer.yaml</filename>
+		</files>
+        <files folder="js" target="templates/g5_helium/custom/js">
+			<filename>menu-tablet-fixer.js</filename>
+		</files>
+    </fileset>
+</extension>
