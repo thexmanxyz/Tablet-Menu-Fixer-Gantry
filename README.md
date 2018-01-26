@@ -51,7 +51,7 @@ Please be aware that the template folder path varies in dependence of the used C
 2. Switch to **Page Settings** and add the new appearing Atom called **Menu Tablet Fixer** either globally to your site (**base outline**), to a specific template or page by dragging it to the designated section.
 3. Configure the appearance according to your favor.
 
-## Supported API Parameters and Atom Options
+## Supported Parameters and Atom Options
 * JS Configuration
   * Remote or Local
   * Priority and Position (head or footer)
