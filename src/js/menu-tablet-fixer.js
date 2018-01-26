@@ -12,22 +12,23 @@
 *                                                     *
 ******************************************************/
 
-jQuery(document).ready(function($) {
-    var sel = ".g-main-nav.g-menu-hastouch %s > li > a";
-	var topSel = sel.replace("%s", ".g-toplevel");
-	var subSel = sel.replace("%s", ".g-sublevel");
-	var subMenuSel = "li > ul.g-active";
-	var openClass = "g-touch-open";
+jQuery(window).load(function ($) {
+	var openCls = "g-touch-open";
+	var activeSel = "li > ul.g-active";
+
+    var menuSel = ".g-main-nav.g-menu-hastouch %s > li > a";
+	var topSel = menuSel.replace("%s", ".g-toplevel");
+	var subSel = menuSel.replace("%s", ".g-sublevel");
     
-	$(topSel + ", " + subSel).click(function(e) {
-			var subItem = $(this).parent().children(subMenuSel);
+	jQuery(topSel + ", " + subSel).click(function(e) {
+			var subItem = jQuery(this).parent().children(activeSel);
 			if(subItem.length > 0){
-				if(!subItem.hasClass(openClass) ){
-					$("." + openClass).removeClass(openClass);
-					subItem.addClass(openClass);
+				if(!subItem.hasClass(openCls) ){
+					jQuery("." + openCls).removeClass(openCls);
+					subItem.addClass(openCls);
 					e.preventDefault();
 				}else{
-					subItem.removeClass(openClass);
+					subItem.removeClass(openCls);
 				}
 			}
 	});
