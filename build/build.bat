@@ -18,7 +18,7 @@ set remove_folders=1
 set log_files=0
 
 REM --- Packaging Variables ---
-set langs_upper=EN, DE
+set langs_upper=EN, IT, DE
 set default_lang=EN
 
 set prj_id=mtf
@@ -72,9 +72,9 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
 )
 
 echo.
-echo -----------------------------
+echo ----------------------------
 echo # %prj_fullname% #
-echo -----------------------------
+echo ----------------------------
 echo.
 echo %msg_start%
 
