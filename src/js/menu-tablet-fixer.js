@@ -16,10 +16,10 @@ jQuery(window).load(function ($) {
 	var openCls = "g-touch-open";
 	var activeSel = "li > ul.g-active";
 
-    var menuSel = ".g-main-nav.g-menu-hastouch %s > li > a";
+	var menuSel = ".g-main-nav.g-menu-hastouch %s > li > a";
 	var topSel = menuSel.replace("%s", ".g-toplevel");
 	var subSel = menuSel.replace("%s", ".g-sublevel");
-    
+
 	jQuery(topSel + ", " + subSel).click(function(e) {
 			var subItem = jQuery(this).parent().children(activeSel);
 			if(subItem.length > 0){
