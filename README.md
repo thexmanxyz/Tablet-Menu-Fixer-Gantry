@@ -67,7 +67,7 @@ Insight of the *Menu Tablet Fixer - Gantry Atom* configuration:
 ![1](/screenshots/backend_js.png)
 
 ## Future Tasks
-* improve the layer handling for a deep of 'n' or at least 5 :P.
+* improve the layer handling for a depth of 'n' or at least 5 :P.
 
 ## Known Issues
 None
