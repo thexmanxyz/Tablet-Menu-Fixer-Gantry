@@ -12,7 +12,7 @@
 *                                                     *
 ******************************************************/
 
-jQuery(window).load(function ($) {
+jQuery(window).load(function () {
 	var openCls = "g-touch-open";
 	var activeSel = "li > ul.g-active";
 
