@@ -70,7 +70,7 @@ Insight of the *Menu Tablet Fixer - Gantry Atom* configuration:
 * improve the layer handling for a depth of 'n' or at least 5 :P.
 
 ## Known Issues
-None
+* untested for submenus located at a depth >= 3, may have no effect.
 
 ## Dependencies
 [Gantry Framework](http://gantry.org/)
