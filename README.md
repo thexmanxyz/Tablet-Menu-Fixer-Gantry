@@ -9,19 +9,19 @@ This project contains a Gantry Atom and improves the default menu behavior of th
 * Gantry Templating Framework and Theme
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry themes - Helium and Hydrogen. The latest Atom version is **v1.0.0**.
+Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry themes - Helium and Hydrogen. The latest Atom version is **v1.1.0**.
 ___
 **Default Atom:**
-[English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.atom.only.EN.v1.0.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.atom.only.IT.v1.0.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.atom.only.DE.v1.0.0.zip)
+[English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.atom.only.EN.v1.1.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.atom.only.IT.v1.1.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.atom.only.DE.v1.1.0.zip)
 
 **Legacy Atom - Gantry <5.3.2:**
-[English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.atom.only.legacy.EN.v1.0.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.atom.only.legacy.IT.v1.0.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.atom.only.legacy.DE.v1.0.0.zip)
+[English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.atom.only.legacy.EN.v1.1.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.atom.only.legacy.IT.v1.1.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.atom.only.legacy.DE.v1.1.0.zip)
 
 **Joomla Plugin - Hydrogen:**
-[English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.j3.hydrogen.EN.v1.0.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.j3.hydrogen.IT.v1.0.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.j3.hydrogen.DE.v1.0.0.zip)
+[English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.j3.hydrogen.EN.v1.1.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.j3.hydrogen.IT.v1.1.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.j3.hydrogen.DE.v1.1.0.zip)
 
 **Joomla Plugin - Helium:**
-[English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.j3.helium.EN.v1.0.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.j3.helium.IT.v1.0.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.0.0/mtf.j3.helium.DE.v1.0.0.zip)
+[English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.j3.helium.EN.v1.1.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.j3.helium.IT.v1.1.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.1.0/mtf.j3.helium.DE.v1.1.0.zip)
 ___
 
 ## Automatic Installation (Joomla only)
