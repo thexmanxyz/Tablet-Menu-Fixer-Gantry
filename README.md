@@ -1,5 +1,5 @@
 # Menu Tablet Fixer - Atom for Gantry
-This project contains a Gantry Atom that improves the default menu behavior of the Gantry templating framework. **Menu Tablet Fixer** was created to fix the broken touch handling of the default Gantry menu on devices with a large screen. Hence, the first tap on a linked menu item that contains sub items always expands the menu, while the second tap opens the underlying link. Furthermore, it provides an easy, user friendly and GUI assisted configuration and integration. In the current revision the following CMSs are supported:
+This project contains a Gantry Atom that improves the default menu behavior of the Gantry templating framework. **Menu Tablet Fixer** was created to fix the broken touch handling of the default Gantry menu on devices with a large screen. Hence, the first tap on a linked menu item that contains sub items always expands the menu, while the second tap finally opens the underlying link. Furthermore, it provides an easy, user friendly and GUI assisted configuration and integration. In the current revision the following CMSs are supported:
 * Joomla
 * Wordpress
 * Grav
