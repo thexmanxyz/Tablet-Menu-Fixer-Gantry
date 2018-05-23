@@ -16,33 +16,38 @@ jQuery(window).load(function () {
     var openCls = "g-touch-open";
     var activeCls = "g-active";
     var selectedCls = "g-selected";
+    var topCls = "g-toplevel";
+    var subCls = "g-sublevel";
+    var mainNavCls = "g-main-nav";
+    var menuTouchCls = "g-menu-hastouch";
     
-    var openClsSel = "." + openCls;
-    var activeClsSel = "." + activeCls;
-    var selectedClsSel = "." + selectedCls;
+    var openSel = "." + openCls;
+    var activeSel = "." + activeCls;
+    var selectedSel = "." + selectedCls;
+    var topSel = "." + topCls;
+    var subSel = "." + subCls;
+    var mainNavSel = "." + mainNavCls;
+    var menuTouchSel = "." + menuTouchCls;
     
-    var activeSel = "li > ul.g-active";
-    var menuSel = ".g-main-nav.g-menu-hastouch %s > li > a";
+    var activeSel = "li > ul" + activeSel;
+    var menuSel = mainNavSel + menuTouchSel + " %s > li > a";
     
-    var topSel = menuSel.replace("%s", ".g-toplevel");
-    var subSel = menuSel.replace("%s", ".g-sublevel");
-
-    jQuery(topSel + ", " + subSel).click(function(e) {
+    jQuery(menuSel.replace("%s", topSel) + ", " + menuSel.replace("%s", subSel)).click(function(e) {
             var subItem = jQuery(this).parent().children(activeSel);
             var deselect = function(cls, selector){
                 jQuery(selector).each(function() {
                     $this = jQuery(this);    
-                    if (!$this.parents(openClsSel).length && !$this.find(openClsSel).length && !$this.hasClass(openCls))
+                    if (!$this.parents(openSel).length && !$this.find(openSel).length && !$this.hasClass(openCls))
                              $this.removeClass(cls);
                 });
             };
             
             if(subItem.length > 0){
                 if(!subItem.hasClass(openCls) ){
-                    jQuery(openClsSel).removeClass(openCls);
+                    jQuery(openSel).removeClass(openCls);
                     subItem.addClass(openCls);
-                    deselect(activeCls, activeClsSel);
-                    deselect(selectedCls, selectedClsSel);
+                    deselect(topSel + " " + activeCls, activeSel);
+                    deselect(topSel + " " + selectedCls, selectedSel);
                     e.preventDefault();
                 }else{
                     subItem.removeClass(openCls);
