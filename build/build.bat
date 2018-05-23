@@ -7,7 +7,7 @@ REM #   Purpose: This project fixes the default menu      #
 REM #            behavior for large touch devices.        #
 REM #            The first tap on a menu with sub items   #
 REM #            expands the menu, whether the second     #
-REM #            tap opens the desposited link.           #
+REM #            tap opens the underlying link.           #
 REM #                                                     #
 REM #   Author: Andreas Kar (thex) <andreas.kar@gmx.at>   #
 REM #                                                     #
