@@ -22,7 +22,7 @@ set langs_upper=EN, IT, DE
 set default_lang=EN
 
 set prj_id=mtf
-set prj_rev=v1.1.1
+set prj_rev=v1.2.0
 set prj_name=menu-tablet-fixer
 set prj_fullname=Menu Tablet Fixer - Atom
 

@@ -13,45 +13,59 @@
 ******************************************************/
 
 jQuery(window).load(function () {
-    var openCls = "g-touch-open";
-    var activeCls = "g-active";
-    var selectedCls = "g-selected";
-    var topCls = "g-toplevel";
-    var subCls = "g-sublevel";
-    var mainNavCls = "g-main-nav";
-    var menuTouchCls = "g-menu-hastouch";
+    var mtf = new MenuTabletFixer();
+    mtf.addMenuItemEvent();
     
-    var openSel = "." + openCls;
-    var activeSel = "." + activeCls;
-    var selectedSel = "." + selectedCls;
-    var topSel = "." + topCls;
-    var subSel = "." + subCls;
-    var mainNavSel = "." + mainNavCls;
-    var menuTouchSel = "." + menuTouchCls;
+});
+
+function MenuTabletFixer(){
     
-    var activeSel = "li > ul" + activeSel;
-    var menuSel = mainNavSel + menuTouchSel + " %s > li > a";
+    /* Classes and Selectors */
+    this.classes = {open: "g-touch-open", active: "g-active", selected: "g-selected", 
+                    tMenu: "g-toplevel", sMenu: "g-sublevel", mainNav: "g-main-nav", 
+                    menuTouch: "g-menu-hastouch"};
     
-    jQuery(menuSel.replace("%s", topSel) + ", " + menuSel.replace("%s", subSel)).click(function(e) {
-            var subItem = jQuery(this).parent().children(activeSel);
+    this.selectors = {open: "." + this.classes.open, active: "li > ul." + this.classes.active, 
+                      selected: "." + this.classes.selected, tMenu: "." + this.classes.tMenu,
+                      sMenu: "." + this.classes.sMenu, mainNav: "." + this.classes.mainNav,
+                      menuTouch: "." + this.classes.menuTouch};
+    
+    this.selectors.menu = this.selectors.mainNav + this.selectors.menuTouch + " %s > li > a";
+    
+    /* Mobile Menu Item Touch */ 
+    this.getMenuItemEvent = function (config){
+        return function(e) {
+            var cSel = config.selectors;
+            var cCls = config.classes;
+            var subItem = jQuery(this).parent().children(cSel.active);
             var deselect = function(cls, selector){
                 jQuery(selector).each(function() {
                     $this = jQuery(this);    
-                    if (!$this.parents(openSel).length && !$this.find(openSel).length && !$this.hasClass(openCls))
+                    if (!$this.parents(cSel.open).length && 
+                        !$this.find(cSel.open).length && 
+                        !$this.hasClass(cCls.open))
                              $this.removeClass(cls);
                 });
             };
             
             if(subItem.length > 0){
-                if(!subItem.hasClass(openCls) ){
-                    jQuery(openSel).removeClass(openCls);
-                    subItem.addClass(openCls);
-                    deselect(topSel + " " + activeCls, activeSel);
-                    deselect(topSel + " " + selectedCls, selectedSel);
+                if(!subItem.hasClass(cCls.open) ){
+                    jQuery(cSel.open).removeClass(cCls.open);
+                    subItem.addClass(cCls.open);
+                    deselect(cSel.tMenu + " " + cCls.active, cSel.active);
+                    deselect(cSel.tMenu + " " + cCls.selected, cSel.selected);
                     e.preventDefault();
                 }else{
-                    subItem.removeClass(openCls);
+                    subItem.removeClass(cCls.open);
                 }
             }
-    });
-});
+        };
+    };
+    
+    this.addMenuItemEvent = function(){
+        var cSel = this.selectors;
+        var attachSel = cSel.menu.replace("%s", cSel.tMenu) + ", " 
+                      + cSel.menu.replace("%s", cSel.sMenu);
+        jQuery(attachSel).click(this.getMenuItemEvent(this));
+    };
+};
