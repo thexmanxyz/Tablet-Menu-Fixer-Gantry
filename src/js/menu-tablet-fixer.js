@@ -48,7 +48,7 @@ function MenuTabletFixer(){
                 });
             };
             
-            if(subItem.length > 0){
+            if(subItem.length){
                 if(!subItem.hasClass(cCls.open) ){
                     jQuery(cSel.open).removeClass(cCls.open);
                     subItem.addClass(cCls.open);
