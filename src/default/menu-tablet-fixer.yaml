@@ -13,7 +13,7 @@
 #######################################################
 
 name: Menu Tablet Fixer
-description: Configure Menu Tablet Fixer Atom.
+description: Improves the touch handling on the main menu.
 type: atom
 
 form:
