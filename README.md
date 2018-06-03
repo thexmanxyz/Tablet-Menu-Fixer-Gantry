@@ -17,6 +17,9 @@ ___
 **Legacy Atom - Gantry <5.3.2:**
 [English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.0/mtf.atom.only.legacy.EN.v1.2.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.0/mtf.atom.only.legacy.IT.v1.2.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.0/mtf.atom.only.legacy.DE.v1.2.0.zip)
 
+**Joomla Plugin - Gantry Global:**
+[English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.0/mtf.j3.global.EN.v1.2.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.0/mtf.j3.global.IT.v1.2.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.0/mtf.j3.global.DE.v1.2.0.zip)
+
 **Joomla Plugin - Hydrogen:**
 [English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.0/mtf.j3.hydrogen.EN.v1.2.0.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.0/mtf.j3.hydrogen.IT.v1.2.0.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.0/mtf.j3.hydrogen.DE.v1.2.0.zip)
 
@@ -27,6 +30,8 @@ ___
 ## Automatic Installation (Joomla only)
 1. Download the Plugin of the *Menu Tablet Fixer Atom* for **Hydrogen or Helium**.
 2. Install it over the Joomla Plugin System.
+
+*If you install the plugin globally be aware that the resource location changes to `/media/gantry5/engines/nucleus`*
 
 ## Manual Installation
 1. Download the **Default or Legacy Package** of the *Menu Tablet Fixer Atom*. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.

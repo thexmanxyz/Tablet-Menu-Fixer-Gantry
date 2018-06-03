@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="file" method="upgrade" version="3.0">
-    <name>Menu Tablet Fixer - Gantry Atom (Hydrogen)</name>
+    <name>Menu Tablet Fixer - Gantry Atom (Global)</name>
     <creationDate>1.2.0</creationDate>
     <creationDate>25.05.2018</creationDate>
     <author>Andreas Kar</author>
@@ -12,15 +12,15 @@
         <![CDATA[<div class="alert alert-info" role="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
         <h3>Menu Tablet Fixer - Atom for Gantry Framework</h3>
         <span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
-        <p><b>INFO</b>:&nbsp;Dieses Atom wurde für Gantry Hydrogen installiert.<br />Wenn Sie das Atom für ein anderes Gantry Template installieren möchten, dann müssen die Dateien wie folgt platziert werden:</p>
+        <p><b>NOTA</b>:&nbsp;La atomo viene installata per Gantry.<br />Se si desidera installare su un template Gantry diverso, bisogna posizionare i file come segue:</p>
 		<ul><li><code>*.yaml</code> =&gt; <code>/templates/[TEMPLATE]/custom/particles</code></li><li><code>*.twig</code> =&gt; <code>/templates/[TEMPLATE]/custom/particles</code></li><li><code>*.js</code> =&gt; <code>/templates/[TEMPLATE]/custom/js</code></li></ul></div>]]>
     </description>
     <fileset>
-        <files folder="particles" target="templates/g5_hydrogen/custom/particles">
+        <files folder="particles" target="media/gantry5/engines/nucleus/particles">
             <filename>menu-tablet-fixer.html.twig</filename>
             <filename>menu-tablet-fixer.yaml</filename>
         </files>
-        <files folder="js" target="templates/g5_hydrogen/custom/js">
+        <files folder="js" target="media/gantry5/engines/nucleus/js">
             <filename>menu-tablet-fixer.js</filename>
         </files>
     </fileset>

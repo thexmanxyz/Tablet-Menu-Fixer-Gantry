@@ -26,7 +26,7 @@ form:
 
     set_js:
       type: container.set
-      label: Javascript
+      label: JS
       fields:
         js.placement:
           type: select.select
@@ -44,19 +44,30 @@ form:
           placeholder: -10 ... 10
           default: 0
 
+        js.option:
+          type: select.select
+          label: localizzazione file JS
+          description: Selezionare un'opzione per il file JS personalizzato, invece della posizione CDN predefinita. Locale = 'templates/G_TEMPLATE/custom/js', Global = 'media/gantry5/engines/nucleus/js', Custome = ogni percorso relativo o assoluto
+          default: disabled
+          options:
+              disabled: Disabile (CDN)
+              local: Locale (Template)
+              global: Global (Gantry)
+              custom: Costume
+
         js.path:
           type: input.text
           label: Percorso JS
           description: Percorso al file JS di Atomo o su questo server (relativo al template/custom) o su un server diverso (assoluto).
           placeholder: percorso/al/JS
-          default: js/menu-tablet-fixer.js
+          default: menu-tablet-fixer.js
 
         js.execution:
           type: select.select
           label: Esecuzione JS
           description: Il metodo di esecuzione usato per il JS caricato.
           placeholder: 'Seleziona...'
-          default: none
+          default: both
           options:
               none: Nessuno
               async: Asincrono
