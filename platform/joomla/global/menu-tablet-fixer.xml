@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="file" method="upgrade" version="3.0">
     <name>Menu Tablet Fixer - Gantry Atom (Global)</name>
-    <creationDate>1.2.0</creationDate>
-    <creationDate>25.05.2018</creationDate>
+    <creationDate>1.2.1</creationDate>
+    <creationDate>03.06.2018</creationDate>
     <author>Andreas Kar</author>
     <authorEmail>andreas.kar@gmx.at</authorEmail>
     <authorUrl></authorUrl>
