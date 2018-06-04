@@ -17,7 +17,7 @@ ___
 **Legacy Atom - Gantry <5.3.2:**
 [English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.1/mtf.atom.only.legacy.EN.v1.2.1.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.1/mtf.atom.only.legacy.IT.v1.2.1.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.1/mtf.atom.only.legacy.DE.v1.2.1.zip)
 
-**Joomla Plugin - Gantry Global:**
+**Joomla Plugin - All Templates (Global):**
 [English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.1/mtf.j3.global.EN.v1.2.1.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.1/mtf.j3.global.IT.v1.2.1.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.1/mtf.j3.global.DE.v1.2.1.zip)
 
 **Joomla Plugin - Hydrogen:**
