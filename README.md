@@ -9,7 +9,7 @@ This project contains a Gantry Atom that improves the default menu behavior of t
 * Gantry Templating Framework and Theme
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry themes - Helium and Hydrogen. The latest Atom version is **v1.2.2**.
+Choose the correct download for your target platform. Joomla Plugin System supported for all Gantry themes globally and locally for Helium or Hydrogen. The latest Atom version is **v1.2.2**.
 ___
 **Default Atom:**
 [English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.2/mtf.atom.only.EN.v1.2.2.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.2/mtf.atom.only.IT.v1.2.2.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.2/mtf.atom.only.DE.v1.2.2.zip)
