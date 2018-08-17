@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="file" method="upgrade" version="3.0">
     <name>Menu Tablet Fixer - Gantry Atom (Hydrogen)</name>
-    <creationDate>1.2.2</creationDate>
+    <version>1.2.2</version>
     <creationDate>04.06.2018</creationDate>
     <author>Andreas Kar</author>
     <authorEmail>andreas.kar@gmx.at</authorEmail>
