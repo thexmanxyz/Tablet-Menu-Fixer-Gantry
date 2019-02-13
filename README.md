@@ -9,7 +9,7 @@ This project contains a Gantry Atom that improves the default menu behavior of t
 * Gantry Templating Framework and Theme
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for all Gantry themes globally and locally for Helium or Hydrogen. The latest Atom version is **v1.2.3**.
+Choose the correct download for your target platform. The Joomla Plugin System is supported for all Gantry themes globally or locally for the templates Helium and Hydrogen. The latest Atom version is **v1.2.3**.
 ___
 **Default Atom:**
 [English](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.3/mtf.atom.only.EN.v1.2.3.zip) / [Italian](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.3/mtf.atom.only.IT.v1.2.3.zip) / [German](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/releases/download/v1.2.3/mtf.atom.only.DE.v1.2.3.zip)
@@ -36,8 +36,8 @@ ___
 ## Manual Installation
 1. Download the **Default or Legacy Package** of the *Menu Tablet Fixer Atom*. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
 2. Extract the files.
-3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/[GANTRY_THEME]/custom/particles`. Please check the list below to determine where the template folder for your CMS is located.
-4. Copy the `.js` file to the folder `/[GANTRY_THEME]/custom/js`. Create it if it does not exist.
+3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/[GANTRY_THEME]/custom/particles`. Please check the [listing](https://github.com/thexmanxyz/Tablet-Menu-Fixer-Gantry#cms-template-folder) below to determine where the template folder for your CMS is located.
+4. Copy the `.js` file to the folder `/[GANTRY_THEME]/custom/js`. Create the folder if it does not exist.
 
 ## CMS Template Folder
 Please be aware that the template folder path varies in dependence of the used CMS. Here is a list of the folders for the different platforms:
@@ -55,6 +55,7 @@ Please be aware that the template folder path varies in dependence of the used C
 1. Go to your Gantry templating backend (e.g. Extensions/Templates).
 2. Switch to **Page Settings** and add the new appearing Atom called **Menu Tablet Fixer** either globally to your site (**base outline**), to a specific template or page by dragging it to the designated section.
 3. Configure the appearance according to your favor.
+4. [Optional] The download package contains the JS file of the project. You can embed it over the backend configuration if you do not want to use the default CDN. If you chose automatic installation the file is already there.
 
 ## Supported Parameters and Atom Options
 * JS Configuration
@@ -72,10 +73,11 @@ Insight of the *Menu Tablet Fixer - Gantry Atom* configuration:
 ![1](/screenshots/backend_js.png)
 
 ## Future Tasks
-* improve the layer handling for a depth of 'n' or at least 5 :P.
+- [ ] improve the layer handling for a depth of `n` or at least `5`
+- [ ] add more languages
 
 ## Known Issues
-* untested for submenus located at a depth >= 3, may have no effect.
+* untested for submenus located at a depth `>= 3`, may has no effect.
 
 ## Dependencies
 [Gantry Framework](http://gantry.org/)
