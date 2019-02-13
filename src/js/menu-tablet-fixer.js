@@ -9,6 +9,8 @@
 *            tap opens the underlying link.           *
 *                                                     *
 *   Author: Andreas Kar (thex) <andreas.kar@gmx.at>   *
+*   Repository: https://git.io/fA9Xl                  *
+*   Homepage: https://gantryprojects.com              *
 *                                                     *
 ******************************************************/
 
