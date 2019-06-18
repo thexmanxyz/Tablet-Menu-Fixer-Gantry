@@ -67,7 +67,7 @@ form:
           label: Percorso JS
           description: Filename o percorso del file JS o su questo server (relativo al localizzazione) o su un server diverso (assoluto).
           placeholder: percorso/al/JS o nome del file
-          default: menu-tablet-fixer.js
+          default: menu-tablet-fixer.min.js
 
         js.execution:
           type: select.select
