@@ -23,7 +23,7 @@
 {% set jsExecAttr = _self.getJSExecution(jsExec) %}
 {% set jsPrior = particle.js.priority|default(0) %}
 
-{% set cdnRepo = 'https://cdn.rawgit.com/thexmanxyz/Tablet-Menu-Fixer-Gantry/57bd8e21/src/js' %}
+{% set cdnRepo = particle.cdn.base_url|default('https://cdn.jsdelivr.net/gh/thexmanxyz/Tablet-Menu-Fixer-Gantry/src/js') %}
 {% set jsPath = _self.getResourceFilePath(particle.js, cdnRepo, 'menu-tablet-fixer', 'js') %}
 
 {%- block particle -%}
