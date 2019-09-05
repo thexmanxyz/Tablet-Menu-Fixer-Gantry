@@ -34,8 +34,8 @@ form:
           type: input.text
           label: CDN Base URL
           description: The base URL for the CDN server.
-          placeholder: https://cdn.jsdelivr.net/gh/thexmanxyz/Tablet-Menu-Fixer-Gantry/src/js
-          default: https://cdn.jsdelivr.net/gh/thexmanxyz/Tablet-Menu-Fixer-Gantry/src/js
+          placeholder: https://cdn.jsdelivr.net/gh/thexmanxyz/Tablet-Menu-Fixer-Gantry@latest/src/js
+          default: https://cdn.jsdelivr.net/gh/thexmanxyz/Tablet-Menu-Fixer-Gantry@latest/src/js
 
         js.placement:
           type: select.select
