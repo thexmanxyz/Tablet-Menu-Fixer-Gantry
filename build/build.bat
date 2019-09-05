@@ -21,7 +21,7 @@ set scr_log_files=0
 
 REM --- project variables ---
 set prj_id=mtf
-set prj_rev=v1.2.5
+set prj_rev=v1.2.6
 set prj_name=menu-tablet-fixer
 set prj_fullname=Menu Tablet Fixer - Atom
 set prj_title_hr=----------------------------
